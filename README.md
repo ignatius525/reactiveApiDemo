@@ -10,7 +10,7 @@ Installing Docker Engine: [Here](https://docs.docker.com/engine/install/)
 
 Once docker is installed, pull latest Cassandra image in terminal window:
 ``` docker pull cassandra:latest```  
-Next, navigate to project repo and run this command to instantiate container with cassandra image locally ```docker-compose up -d```  
+Next, navigate to project repo (or just copy the file [here](compose.yaml)) and run this command to instantiate container with cassandra image locally ```docker-compose up -d```  
 
 If you have docker engine UI available, the container should appear within it. 
 
