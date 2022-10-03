@@ -165,6 +165,10 @@ public class ProductController {
 ```
 This is it. It is that easy to create exposed endpoints in Spring. An autowired productService object will be attached to the controller class. Whenver a user hits a specified endpoint, it will then call the associated method with the service. Take note of the `Mono` and `Flux` data streams that are opened when hitting each of the endpoints. If you set up the Swagger UI earlier, feel free to use it to try out your new reactive API. Otherwise, I would recommend [Postman](https://www.postman.com/).
 
+![image](https://user-images.githubusercontent.com/55921708/193660052-be52145b-3f45-44c1-941c-0ba8f338dc1c.png)
+![image](https://user-images.githubusercontent.com/55921708/193660066-fb4a5c1c-7ae6-41b5-82fd-670d0c17e3b3.png)
+
+
 ## Exposed endpoints
 
 POST `/product` - Pass product object to create new object in db  
