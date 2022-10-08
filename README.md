@@ -17,6 +17,7 @@ If you have docker engine UI available, the container should appear within it.
 ```docker exec -it cassandra-dev``` to start up the cql shell for Cassandra.
 
 Once in the shell, run this command to make sure the table is instantiated properly.  
+```CREATE KEYSPACE demo WITH REPLICATION = {'class':'SimpleStrategy','replication_factor':1}```
 ```use demo;```  
 ```create table if not exists productentity( id int , name text, price double, quantity int, PRIMARY KEY ((id));```
 
