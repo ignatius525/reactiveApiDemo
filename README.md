@@ -14,7 +14,7 @@ Next, navigate to project repo (or just copy the file [here](compose.yaml)) and 
 
 If you have docker engine UI available, the container should appear within it. 
 
-```docker exec -it cassandra-dev``` to start up the cql shell for Cassandra.
+```docker exec -it cassandra-dev cqlsh``` to start up the cql shell for Cassandra.
 
 Once in the shell, run this command to make sure the table is instantiated properly.  
 ```CREATE KEYSPACE demo WITH REPLICATION = {'class':'SimpleStrategy','replication_factor':1};```  
